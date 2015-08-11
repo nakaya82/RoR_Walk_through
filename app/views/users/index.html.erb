@@ -1,0 +1,24 @@
+<p id="notice"> <%= notice %></p>
+
+<h1>利用者一覧</h1>
+<table>
+  <thead>
+    <tr>
+      <th><%= sortable "name", "氏名" %> </th>
+      <th><%= sortable "department", "部署" %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= link_to user.name, user %></td>
+        <td><%= user.department %></td>
+        <td><%= link_to '編集', edit_user_path(user) %></td>
+        <td><%= link_to '削除', user_path(user), method: 'DELETE' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New User', new_user_path %>

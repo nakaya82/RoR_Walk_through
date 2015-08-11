@@ -1,0 +1,9 @@
+/home/vagrant/.rbenv/versions/2.2.2/bin/ruby -r ./siteconf20150807-4274-14kyah5.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: `all' に対して行うべき事はありません.
+
+make "DESTDIR=" install
