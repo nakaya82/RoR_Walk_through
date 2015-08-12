@@ -12,7 +12,16 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
+# # JavaScript のエンジンである v8 を Ruby から使えるようにする
 gem 'therubyracer', platforms: :ruby
+
+# less(CSS)対応（後述LESSを使う場合）
+gem 'less-rails'
+# # JavaScriptコードを実行するためのエンジン
+gem 'execjs'
+
+# # Twitter社が提供しているCSSとJavaScriptのフレームワーク
+gem 'twitter-bootstrap-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
